@@ -53,4 +53,10 @@
     }
 }
 
+@media (max-width: 600px){
+    .container-register {
+        min-width: 97vw;        
+    }
+}
+
 .copyright{color:$neutral-color; margin:40px; text-align:center;}
