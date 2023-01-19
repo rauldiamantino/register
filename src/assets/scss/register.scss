@@ -1,4 +1,17 @@
-.container-register {
-     display: flex;
-     background-color: $neutral-color;
+.container-register { display: flex; background-color: $neutral-color; border-radius: 10px; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.39); padding: 40px; width: 330px;
+     fieldset       { border: none;}
+     legend         { text-align: center; }
+
+     .container-register-form,
+     .container-register-form.personal,
+     .container-register-form.password div { display: flex; gap: 6px; flex-direction: column; width: 100%;}
+
+     input             { border: 2px solid $quartenary-color; border-radius: 10px; color: $secondary-color; padding: 10px 10px;
+        &::placeholder { color: $secondary-color; }
+     }
+
+     .container-register-form.full-name input,
+     .container-register-form.password input { background-color: $secondary-color; color: $neutral-color;
+            &::placeholder                   { color: $neutral-color; }
+     }
 }

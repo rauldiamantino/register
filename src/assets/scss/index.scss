@@ -6,3 +6,11 @@ body {
      justify-content: center;
      width: 100vw;
 }
+
+/* hide label with accessibility */
+.hide-text {
+     position: absolute;
+     left: -999em;
+     width: 1em;
+     overflow: hidden;
+}
